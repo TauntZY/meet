@@ -143,7 +143,13 @@
 //            $("#page_inv_2").css({display: "none",marginTop:"150%"});
 //        });
 
-
+        //在输入信息的时候隐藏下一页的指示（防止挡住输入框）
+        $("#page_inv_3 .input").focusin(function(){
+            $("#next").hide();
+        });
+        $("#page_inv_3 .input").focusout(function(){
+            $("#next").show();
+        });
 
         $(".share").click(function(){
             $(".shareop").css({display:'block'});
