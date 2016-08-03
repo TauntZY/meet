@@ -10,13 +10,13 @@ $(function(){
             $(this).addClass("show");
         }
     });
-    $(".lev").click(function(){
+    $("#center .lev").click(function(){
         if($(this).hasClass("show")){
-            $(this).parent().stop().animate({height:"52"});
+            $(this).parent().stop().animate({height:"63"});
             $(this).parent().find("span:first-child").removeClass("ani");
             $(this).removeClass("show");
         }else{
-            $(this).parent().stop().animate({height:"255"});
+            $(this).parent().stop().animate({height:"268"});
             $(this).parent().find("span:first-child").addClass("ani");
             $(this).addClass("show");
         };

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+    var $emeeting_user_regions = {}
     //用户权限-----指定省市
     var user_regions;
     if ($emeeting_user_regions.hasOwnProperty(86)) {
@@ -66,8 +66,8 @@ $(document).ready(function(){
                     li.setAttribute("class","s_city");
                     li.setAttribute('value',x);
                     con.appendChild(li);
-
                 }
+                $("#a_area").val(address);
             }
             $(".s_city").click(function(){
                 //记录市编号
@@ -90,6 +90,7 @@ $(document).ready(function(){
                         li.setAttribute('value',x);
                         con.appendChild(li);
                     }
+                    $("#a_area").val(address);
                 }
                 $(".s_county").click(function(){
                     //记录市编号

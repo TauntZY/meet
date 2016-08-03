@@ -92,12 +92,10 @@ html,body{
     background: url("../images/formbg.png") no-repeat;
     background-size: 100% 100%;
     width: 563px;
-    height: 210px;
+    height: auto;
     margin-top: 150px;
     margin-left: 38px;
 }
-
-
 #page_inv_2 .input{
     display: block;
     background: none;
@@ -109,10 +107,11 @@ html,body{
     margin-left: 157px;
     /*font*/
     color: #888888;
-    white-space: normal;
-    overflow-x: scroll;
     font-size: 23px;
     line-height: 39px;
+}
+#page_inv_2 #m_area{
+    margin-bottom: 15px;
 }
 #page_inv_2 #m_info{
     margin-top: 25px;

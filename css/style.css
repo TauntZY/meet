@@ -113,7 +113,7 @@ tr,td{
     display: block;
     float: left;
     height: 80px;
-    width: 160px;
+    width: 213.33px;
 }
 
 #nav_4{
@@ -448,7 +448,6 @@ tr,td{
     position: absolute;
     background-color: rgba(107,200,204,0.5);
     width: 640px;
-    min-height:1095px;
     height: 100%;
     overflow: hidden;
 }
@@ -469,7 +468,7 @@ tr,td{
 #page_meet #meet_con{
     position: relative;
     width:560px;
-    height: 940px;
+    min-height:800px;
     background-color: rgba(255,255,255,0.5);
     border-radius: 20px;
     margin-left: 65px;
@@ -505,7 +504,7 @@ tr,td{
     position: absolute;
     display: block;
     width: 485px;
-    height: 770px;
+    height: 655px;
     margin-left: 72px;
     margin-top: 70px;
     /*background: red;*/
@@ -672,6 +671,7 @@ tr,td{
 /*会议信息分类栏*/
 #page_meet #classify{
     background: url("../images/meet/classify.png") repeat-y;
+    background-position: 0px -180px;
     width: 340px;
     height: 100%;
     position: absolute;
@@ -687,7 +687,7 @@ tr,td{
     height: 211px;
     position: absolute;
     margin-left: 231px;
-    margin-top: 710px;
+    margin-top: 530px;
 }
 
 #page_meet #classify #center,
@@ -698,7 +698,7 @@ tr,td{
 #page_meet #classify li{
     display: block;
     width: 243px;
-    height: 52px;
+    height: 63px;
     overflow: hidden;
     /*font*/
     font-size: 25px;
@@ -706,13 +706,18 @@ tr,td{
     color: #004098;
     font-weight: bold;
 }
+#page_meet #classify li p{
+    height: 62px;
+    line-height: 62px;
+    font-size: 27px;
+}
 #page_meet #classify li .icon{
     position: absolute;
     background: url("../images/meet/cicon.png") no-repeat;
     width: 37px;
     height: 29px;
     right: 120px;
-    margin-top:10px;
+    margin-top:17px;
 }
 
 #page_meet #classify li .ani{
@@ -753,9 +758,28 @@ tr,td{
     }
 }
 
-
+#page_meet #classify li{
+    border-bottom:1px solid #6BBEE5;
+}
+#page_meet #classify #center li{
+    border: none;
+}
 #page_meet #classify li .lev{
-    border-bottom: 1px solid #6BC8F2;
+    border-bottom:1px solid #6BBEE5;
+}
+#page_meet #classify li .icon{
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); /* Internet Explorer */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+}
+#page_meet #classify #center li .icon{
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); /* Internet Explorer */
+    -moz-transform:rotate(0deg); /* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+    -o-transform:rotate(0deg); /* Opera */
 }
 #page_meet #classify li a{
     display: block;
@@ -1338,7 +1362,7 @@ html,body{
     background: none;
     background: url("../images/regist/submit.png");
     margin-top: 50px;
-    margin-bottom: 170px;
+    margin-bottom: 0px;
     margin-left: 149px;
     border-radius: 5px;
     position: relative;

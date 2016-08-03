@@ -26,8 +26,10 @@
             <!--中央工作人员-->
             <div id="center" style="display: block">
                 <li class="">
-                    <span class="icon"></span>
-                    <p class="lev">FY17 Q3</p>
+                    <p class="lev">
+                        <span class="icon"></span>
+                        <span>FY17 Q3</span>
+                    </p>
                     <a href="#">CKA东区</a>
                     <a href="#">CKA西区</a>
                     <a href="#">CKA南区</a>
@@ -39,25 +41,34 @@
 
             <div id="area" style="display: block">
                 <li>
-                    <span class="icon"></span>
-                    <p class="">FY17 Q3</p>
+                    <p class="lev">
+                        <span class="icon"></span>
+                        <span>FY17 Q3</span>
+                    </p>
                 </li>
                 <li>
-                    <span class="icon"></span>
-                    <p class="">我的会议</p>
+                    <p class="lev">
+                        <span class="icon"></span>
+                        <span>我的会议</span>
+                    </p>
                 </li>
             </div>
 
             <!--省级工作人员-->
 
-            <div id="province" style="display: none">
+            <div id="province" style="display: block">
                 <li>
-                    <span class="icon"></span>
-                    <p class="">FY17 Q3</p>
+                    <p class="lev">
+                        <span class="icon"></span>
+                        <span>FY17 Q3</span>
+                    </p>
                 </li>
                 <li>
-                    <span class="icon"></span>
-                    <p class="">我的会议</p>
+
+                    <p class="lev">
+                        <span class="icon"></span>
+                        <span>我的会议</span>
+                    </p>
                 </li>
             </div>
 
@@ -404,5 +415,11 @@
         </div>
 
     </div>
+    <script>
+        var screenH = $(window).height();
+        $("#page_meet #meet_con").height(screenH - 160);
+        $("#page_meet #meet_con ul").height(screenH - 305);
+    </script>
+
 </body>
 </html>
