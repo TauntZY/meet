@@ -32,32 +32,32 @@
 
                 <!--错误的话input加上class = error  -->
                 <span class="list">会议时间:</span>
-                <input id="beginTime" class="input kbtn" type="text" readonly>
+                <input id="beginTime" class="input kbtn" type="text" readonly placeholder="请选择">
                 <ul class="errorlist">
                     <li></li>
                 </ul>
 
                 <span class="list">会议场地:</span>
-                <input id="a_street" class="input" type="text">
+                <input id="a_street" class="input" type="text" placeholder="场地全程">
                 <ul class="errorlist">
                     <li></li>
                 </ul>
 
                 <span class="list">会议地区:</span>
-                <input id="a_area" class="input" type="text" readonly>
+                <input id="a_area" class="input" type="text" readonly placeholder="请选择">
                 <ul class="errorlist">
                     <li></li>
                 </ul>
 
                 <span class="list">详细地址:</span>
-                <input id="a_info" class="input" type="text">
+                <input id="a_info" class="input" type="text" placeholder="会议地区不必再填写">
                 <ul class="errorlist">
                     <li></li>
                 </ul>
 
 
                 <span class="list">会 议 ID:</span>
-                <input id="a_id" class="input" type="number">
+                <input id="a_id" class="input" type="number" placeholder="一旦填写，不可更改">
                 <ul class="errorlist">
                     <li></li>
                 </ul>
@@ -82,5 +82,9 @@
         </div>
     </div>
     <div id="datePlugin"></div>
+    <script>
+        <!--   test  -->
+        var $emeeting_user_regions = {}
+    </script>
 </body>
 </html>

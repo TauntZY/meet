@@ -58,73 +58,79 @@ tr,td{
 }
 
 /*邀请函样式*/
-#nav_2,
-#nav_3,
-#nav_31,
-#nav_4{
+.nav {
     z-index: 999;
-}
-#nav_2 a.not,
-#nav_3 a.not,
-#nav_31 a.not,
-#nav_4 a.not{
-    background-color: rgba(100,100,100,0.5);
-}
-#nav_2{
-    position: fixed;
-    bottom:0px;
-    background: url("../images/invi_con/nav_2.png") no-repeat;
-    background-size: 100% 100%;
-    width: 640px;
+    width: 100%;
     height: 80px;
+    position: absolute;
+    bottom: 0px;
 }
-#nav_2>a{
+.nav table{
+    table-layout: fixed;
+    text-align: center;
+    width:100%;
+    height: 80px;
+    border: none;
+    background: white;
+}
+.nav table td{
+    border: none;
+    border-right:1px solid #0D78BB;
+}
+.nav table td:last-child{
+    border: none;
+}
+.nav .home{
+    background: url("../images/invi_con/nav_home.png") center center no-repeat;
+    background-size: 86.73px 60px;
+    /*width: 399px;*/
+    /*height: 276px;*/
+}
+.nav .all{
+    background: url("../images/invi_con/nav_all.png") center center no-repeat;
+    background-size: 91.026px 60px;
+    /*width: 399px;*/
+    /*height: 263px;*/
+}
+.nav .data{
+    background: url("../images/invi_con/nav_data.png") center center no-repeat ;
+    background-size: 67.6px 60px;
+    /*width: 311px;*/
+    /*height: 276px;*/
+}
+.nav .edit{
+    background: url("../images/invi_con/nav_edit.png") center center  no-repeat;
+    background-size: 68.85px 60px;
+    background-position: 0px 3px;
+    /*width: 311px;*/
+    /*height: 271px;*/
+}
+.nav .return{
+    background: url("../images/invi_con/nav_return.png") center center no-repeat ;
+    background-size: 65px 60px;
+    /*width: 299px;*/
+    /*height: 276px;*/
+}
+.nav .create{
+    background: url("../images/invi_con/nav_create.png") center center no-repeat ;
+    background-size: 70.95px 60px;
+    /*width: 311px;*/
+    /*height: 263px;*/
+}
+.nav .share{
+    background: url("../images/invi_con/nav_share.png") center center no-repeat ;
+    background-size: 68.21px 60px;
+    /*width: 299px;*/
+    /*height: 263px;*/
+}
+.nav table td{
+    position: relative;
+}
+.nav table td a{
     display: block;
-    float: left;
-    height: 80px;
-    width: 320px;
-}
-#nav_31{
-    position: fixed;
-    bottom:0px;
-    background: url("../images/invi_con/nav_31.png") no-repeat;
-    background-size: 100% 100%;
-    width: 640px;
+    width: 100%;
     height: 80px;
 }
-#nav_31 a,
-#nav_3 a{
-    display: block;
-    float: left;
-    height: 80px;
-    width: 213.33px;
-}
-
-#nav_3{
-    position: fixed;
-    bottom:0px;
-    background: url("../images/invi_con/nav_3.png") no-repeat;
-    background-size: 100% 100%;
-    width: 640px;
-    height: 80px;
-}
-
-#nav_4 a{
-    display: block;
-    float: left;
-    height: 80px;
-    width: 213.33px;
-}
-
-#nav_4{
-    position: fixed;
-    bottom:0px;
-    background: url("../images/invi_con/nav_4.png") no-repeat;
-    background-size: 100% 100%;
-    width: 640px;
-    height: 80px;
-}
-
 
 
 
@@ -203,7 +209,7 @@ tr,td{
     height: 48px;
     margin-top: 30px;
     /*font*/
-    font-size: 24px;
+    font-size: 21px;
     color: #888888;
     text-indent: 10px;
     /*清楚默认样式*/
@@ -307,7 +313,9 @@ tr,td{
     text-align: center;
     right: 15px;
     color:white;
-    font-size:18px
+    font-size:18px;
+    white-space: nowrap;
+    overflow: scroll;
 }
 
 #page_home #model{
@@ -446,7 +454,7 @@ tr,td{
 /*==================================*/
 #page_meet{
     position: absolute;
-    background-color: rgba(107,200,204,0.5);
+    background-color: rgba(107,200,242,0.5);
     width: 640px;
     height: 100%;
     overflow: hidden;
@@ -575,7 +583,9 @@ tr,td{
 #page_meet #meet_con .info .count .id{
     margin-top: 0px;
     margin-left: 70px;
-    width: auto!important;
+    width: 72.5px!important;
+    white-space: nowrap;
+    overflow: scroll;
 }
 
 /*没有会议*/
@@ -758,7 +768,7 @@ tr,td{
     }
 }
 
-#page_meet #classify li{
+#page_meet #classify ul li{
     border-bottom:1px solid #6BBEE5;
 }
 #page_meet #classify #center li{
@@ -1047,7 +1057,8 @@ tr,td{
 /*=============live_join.html========*/
 /*==================================*/
 #page_live_join,
-#page_live_joinok{
+#page_live_joinok,
+#page_relive_joinok{
     position: absolute;
     width: 640px;
     min-height: 960px;
@@ -1058,7 +1069,8 @@ tr,td{
     background-size: cover;
 }
 #page_live_join .live_h,
-#page_live_joinok .live_h{
+#page_live_joinok .live_h,
+#page_relive_joinok .live_h{
     background: url("../images/join/liveh.png");
     background-size: 100% 100%;
     width: 426px;
@@ -1075,7 +1087,7 @@ tr,td{
     height: auto;
     position: absolute;
     left: 68.5px;
-    margin-top:200px;
+    margin-top:160px;
 }
 #page_live_join #sign #sign_t{
     background: url("../images/sign/sign_t.png") no-repeat;
@@ -1147,6 +1159,20 @@ tr,td{
     margin-left: 145.5px;
     margin-bottom: 80px;
 }
+#page_live_join form .resubmit{
+    position: relative;
+    border: none;
+    background: none;
+    display: block;
+    background: url("../images/sign/resubmit.png");
+    background-size: 100% 100%;
+    width: 297px;
+    height: 112px;
+    width: 148.5px;
+    height: 61px;
+    margin-left: 145.5px;
+    margin-bottom: 80px;
+}
 #page_live_join #info{
     position: relative;
     display: block;
@@ -1165,7 +1191,7 @@ tr,td{
     background: url("../images/join/live_ok.png");
     background-size: 100% 100%;
     width: 523px;
-    height: 713px;
+    height: 711.5px;
     position: relative;
     margin: 0 auto;
     margin-top: 160px;
@@ -1178,7 +1204,26 @@ tr,td{
     bottom: 7px;
     left: 177px;
 }
-
+/*==================================*/
+/*=============live_rejoin_ok.html========*/
+/*==================================*/
+#page_relive_joinok #con{
+    background: url("../images/join/relive_ok.png");
+    background-size: 100% 100%;
+    width: 528px;
+    height: 716.5px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+#page_relive_joinok #con a{
+    position:absolute;
+    display: block;
+    width: 170px;
+    height: 50px;
+    bottom: 7px;
+    left: 177px;
+}
 /*==================================*/
 /*=============signin.html==========*/
 /*==================================*/
@@ -1330,13 +1375,13 @@ html,body{
     position: relative;
     width: 437px;
     height: auto;
-    top: 120px;
+    top: 100px;
     margin-left: 38px;
 }
 #page_regist .input{
     width: 377px;
     height: 50px;
-    margin-top:20px;
+    margin-top:10px;
     margin-left: 60px;
     border-radius: 0px 5px 5px 0px;
     text-indent: 10px;
@@ -1361,7 +1406,7 @@ html,body{
     border: none;
     background: none;
     background: url("../images/regist/submit.png");
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 0px;
     margin-left: 149px;
     border-radius: 5px;
@@ -1381,12 +1426,8 @@ html,body{
 /*==================================*/
 /*==============login.html==========*/
 /*==================================*/
-#page_login{
-    position: absolute;
-    width: 640px;
-    height: 100%;
-    overflow: hidden;
-    overflow-y: scroll;
+#page_login header{
+    min-height:287px;
 }
 #page_login header img{
     display: block;
@@ -1434,6 +1475,7 @@ html,body{
     -webkit-appearance:none;
     border: 1px solid #898988;
     border-left: 0px!important;
+    -webkit-user-modify: read-write-plaintext-only;
 }
 #page_login #remember{
     position: relative;
@@ -1497,7 +1539,6 @@ html,body{
     background: none;
     background: url("../images/login/lbtn.png");
     margin-top: 40px;
-    margin-bottom: 150px;
     margin-left: 149px;
     border-radius: 5px;
     position: relative;

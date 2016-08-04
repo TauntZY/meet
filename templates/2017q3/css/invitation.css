@@ -88,13 +88,13 @@ html,body{
     margin-left: 20px;
 }
 #page_inv_2 #form{
-    position: absolute;
+    position: relative;
     background: url("../images/formbg.png") no-repeat;
     background-size: 100% 100%;
     width: 563px;
     height: auto;
-    margin-top: 150px;
-    margin-left: 38px;
+    top: 150px;
+    left: 38px;
 }
 #page_inv_2 .input{
     display: block;
@@ -114,7 +114,9 @@ html,body{
     margin-bottom: 15px;
 }
 #page_inv_2 #m_info{
-    margin-top: 25px;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 #page_inv_2 .edited{
     color: black;
@@ -157,22 +159,24 @@ html,body{
     width: 365px;
 }
 #page_inv_2 #mt_info_t{
-    position: absolute;
+    position: relative;
     background: url("../images/mt_info_t.png") no-repeat;
-    width: 550px;
-    height:47px ;
+    background-size: 100% 100%;
+    width: 548.5px;
+    height:46px ;
     margin: 0 auto;
-    margin-top: 370px;
-    margin-left: 45px;
+    top: 160px;
+    left: 0px;
+    border-radius: 8px;
 }
 #page_inv_2 #mt_info{
-    position: absolute;
+    position: relative;
     background: url("../images/mt_info.png");
     background-size: 100% 100%;
     width: 560px;
     height: 490px;
-    margin-top: 430px;
-    margin-left: 42px;
+    top: 170px;
+    left: 42px;
 }
 
 

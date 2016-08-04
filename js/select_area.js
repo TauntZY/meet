@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var $emeeting_user_regions = {}
+
     //用户权限-----指定省市
     var user_regions;
     if ($emeeting_user_regions.hasOwnProperty(86)) {

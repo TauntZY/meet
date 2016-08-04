@@ -5,16 +5,9 @@
     <meta charset="UTF-8">
     <title>登录</title>
     <link rel="stylesheet" href="css/style.css?=20160726006"/>
-    <script src="js/lib/jquery.js"></script>
-    <script src="js/lib/circle-progress.js"></script>
 </head>
 <body>
 
-<div id="page_loading" style="display: none">
-    <div id="circle">
-        <div id="bg"></div>
-    </div>
-</div>
 <div id="page_login">
         <header>
             <img src="images/regist/reg_1.png" width="640" alt=""/>
@@ -25,7 +18,7 @@
 
                 <!--错误的话input 和后面的 span 都要加 error-->
                 <!--所有的错误都一样的形式展现-->
-                <input type="number" class="input "  placeholder="工号"/>
+                <input type="number" class="input"  placeholder="工号"/>
                 <span id="id" class=""></span>
                 <!--错误信息-->
                 <ul class="errorlist">
@@ -50,6 +43,9 @@
                 </div>
                 <!--提交-->
                 <input type="submit" value="" id="login"/>
+
+                <!-- 此div为了撑开父级高度 -->
+                <div style="width: 100px;height: 130px;position: relative;"></div>
             </form>
         </div>
     </div>
