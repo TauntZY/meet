@@ -272,6 +272,18 @@ html,body{
     margin-left: 145.5px;
     margin-bottom: 80px;
 }
+#page_inv_3 form .resubmit{
+    position: relative;
+    border: none;
+    background: none;
+    display: block;
+    background: url("../../../images/sign/resubmit.png");
+    background-size: 100% 100%;
+    width: 148.5px;
+    height: 61px;
+    margin-left: 145.5px;
+    margin-bottom: 80px;
+}
 #page_inv_3 #info{
     position: relative;
     display: block;

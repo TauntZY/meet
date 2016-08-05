@@ -1036,14 +1036,15 @@ tr,td{
 /*=============join_ok.html==========*/
 /*==================================*/
 #page_joinok #con{
-    background: url("../images/join/join_ok.png") no-repeat;
-    background-size: 100%;
-    width:534px;
-    height:856px;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 80px;
-}
+     background: url("../images/join/join_ok.png") no-repeat;
+     background-size: 100%;
+     width:534px;
+     height:856px;
+     position: relative;
+     margin: 0 auto;
+     margin-top: 80px;
+ }
+
 #page_joinok #con a{
     display: block;
     position: absolute;
@@ -1053,12 +1054,29 @@ tr,td{
     bottom:9px;
     left: 234px;
 }
+#page_joinok #con2{
+    background: url("../images/join/rejoin_ok.png") no-repeat;
+    background-size: 100%;
+    width:522px;
+    height:866px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+#page_joinok #con2 a{
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    bottom:9px;
+    left: 227px;
+}
 /*==================================*/
 /*=============live_join.html========*/
 /*==================================*/
 #page_live_join,
-#page_live_joinok,
-#page_relive_joinok{
+#page_live_joinok{
     position: absolute;
     width: 640px;
     min-height: 960px;
@@ -1069,8 +1087,7 @@ tr,td{
     background-size: cover;
 }
 #page_live_join .live_h,
-#page_live_joinok .live_h,
-#page_relive_joinok .live_h{
+#page_live_joinok .live_h{
     background: url("../images/join/liveh.png");
     background-size: 100% 100%;
     width: 426px;
@@ -1204,26 +1221,7 @@ tr,td{
     bottom: 7px;
     left: 177px;
 }
-/*==================================*/
-/*=============live_rejoin_ok.html========*/
-/*==================================*/
-#page_relive_joinok #con{
-    background: url("../images/join/relive_ok.png");
-    background-size: 100% 100%;
-    width: 528px;
-    height: 716.5px;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 160px;
-}
-#page_relive_joinok #con a{
-    position:absolute;
-    display: block;
-    width: 170px;
-    height: 50px;
-    bottom: 7px;
-    left: 177px;
-}
+
 /*==================================*/
 /*=============signin.html==========*/
 /*==================================*/
