@@ -99,11 +99,8 @@ tr,td{
     /*height: 276px;*/
 }
 .nav .edit{
-    background: url("../images/invi_con/nav_edit.png") center center  no-repeat;
+    background: url("../images/invi_con/nav_edit.png") center 13px no-repeat;
     background-size: 68.85px 60px;
-    background-position: 0px 3px;
-    /*width: 311px;*/
-    /*height: 271px;*/
 }
 .nav .return{
     background: url("../images/invi_con/nav_return.png") center center no-repeat ;
@@ -715,6 +712,8 @@ tr,td{
     text-indent: 30px;
     color: #004098;
     font-weight: bold;
+    text-decoration: none;
+    border-bottom: 0px;
 }
 #page_meet #classify li p{
     height: 62px;

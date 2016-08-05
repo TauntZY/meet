@@ -111,6 +111,7 @@ html,body{
     line-height: 39px;
 }
 #page_inv_2 #m_area{
+    height: auto!important;
     margin-bottom: 15px;
 }
 #page_inv_2 #m_info{
