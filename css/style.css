@@ -82,43 +82,33 @@ tr,td{
 }
 .nav .home{
     background: url("../images/invi_con/nav_home.png") center center no-repeat;
-    background-size: 86.73px 60px;
-    /*width: 399px;*/
-    /*height: 276px;*/
+    background-size: 134px 65px;
+    /*width: 268px;*/
+    /*height: 130px;*/
 }
 .nav .all{
     background: url("../images/invi_con/nav_all.png") center center no-repeat;
-    background-size: 91.026px 60px;
-    /*width: 399px;*/
-    /*height: 263px;*/
+    background-size: 132px 65px;
 }
 .nav .data{
     background: url("../images/invi_con/nav_data.png") center center no-repeat ;
-    background-size: 67.6px 60px;
-    /*width: 311px;*/
-    /*height: 276px;*/
+    background-size: 132px 65px;
 }
 .nav .edit{
-    background: url("../images/invi_con/nav_edit.png") center 13px no-repeat;
-    background-size: 68.85px 60px;
+    background: url("../images/invi_con/nav_edit.png") center center no-repeat;
+    background-size: 132px 65px;
 }
 .nav .return{
     background: url("../images/invi_con/nav_return.png") center center no-repeat ;
-    background-size: 65px 60px;
-    /*width: 299px;*/
-    /*height: 276px;*/
+    background-size:132px 65px;
 }
 .nav .create{
     background: url("../images/invi_con/nav_create.png") center center no-repeat ;
-    background-size: 70.95px 60px;
-    /*width: 311px;*/
-    /*height: 263px;*/
+    background-size: 132px 65px;
 }
 .nav .share{
     background: url("../images/invi_con/nav_share.png") center center no-repeat ;
-    background-size: 68.21px 60px;
-    /*width: 299px;*/
-    /*height: 263px;*/
+    background-size: 132px 65px;
 }
 .nav table td{
     position: relative;
@@ -607,10 +597,10 @@ tr,td{
 }
 /*#page_meet #meet_con .me .name,*/
 /*#page_meet #meet_con .me .my_meet{*/
-    /*margin-left: 110px;*/
-    /*font-size: 23px;*/
-    /*color: #004098;*/
-    /*font-weight: 700;*/
+/*margin-left: 110px;*/
+/*font-size: 23px;*/
+/*color: #004098;*/
+/*font-weight: 700;*/
 /*}*/
 #page_meet #meet_con .me .name{
     margin-top: 44px;
@@ -790,7 +780,14 @@ tr,td{
     -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
     -o-transform:rotate(0deg); /* Opera */
 }
-#page_meet #classify li a{
+#page_meet #classify a{
+    text-decoration: none;
+    color:#004098;
+    width: 243px;
+    height: 63px;
+    display: block;
+}
+#page_meet #classify #center a{
     display: block;
     width: 213px;
     height: 50px;
@@ -1035,14 +1032,14 @@ tr,td{
 /*=============join_ok.html==========*/
 /*==================================*/
 #page_joinok #con{
-     background: url("../images/join/join_ok.png") no-repeat;
-     background-size: 100%;
-     width:534px;
-     height:856px;
-     position: relative;
-     margin: 0 auto;
-     margin-top: 80px;
- }
+    background: url("../images/join/join_ok.png") no-repeat;
+    background-size: 100%;
+    width:534px;
+    height:856px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
+}
 
 #page_joinok #con a{
     display: block;
@@ -1988,260 +1985,4 @@ ul, li {
     bottom: 0px;
     position: absolute;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
