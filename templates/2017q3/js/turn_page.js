@@ -4,7 +4,19 @@ $(function(){
     $('#con_inv').fullpage({
         anchors:['page1','page2','page3'],
         continuousVertical: false,
-        scrollingSpeed:500
+        scrollingSpeed:700,
+        css3:true,
+        easing:'ease-in-out',
+        easingcss3:'ease-in-out',
+        afterLoad: function(anchorLink, index){
+
+            if(index == 3){
+                $("#next").hide();
+            }
+            else{
+                $("#next").show();
+            }
+        },
     });
 
     //----禁止 微信下拉查看网址

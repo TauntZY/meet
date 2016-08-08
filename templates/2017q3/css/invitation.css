@@ -26,27 +26,25 @@ html,body{
     list-style: none;
 }
 #next{
-    z-index: 999;
+    z-index: 9;
     background: url("../images/nexticon.png");
     width: 51px;
     height: 35px;
     position: fixed;
-    bottom:90px;
+    bottom:80px;
     left: 294.5px;
     /*动画*/
     animation: nextAni .8s infinite alternate;
     -webkit-animation: nextAni .8s infinite alternate;
 }
 @keyframes nextAni {
-    from{bottom: 90px;opacity: 0;}
+    from{bottom: 80px;opacity: 0;}
     to{bottom: 140px;opacity: 1;}
 }
 @-webkit-keyframes nextAni {
-    from{bottom: 90px;opacity: 0;}
+    from{bottom: 80px;opacity: 0;}
     to{bottom: 140px;opacity: 1;}
 }
-
-
 
 /*分享*/
 .shareop{
