@@ -63,32 +63,47 @@
 
                         <!--流览时设置为只读  -->
 
+                        <!-- 选择箭头 -->
+                        <div id="select_icon" class=""></div>
+
+                        <input type="text" class="input " id="id_category" placeholder="类别（与戴尔合作过即是老客户）" readonly >
+                        <!--悬着内容框-->
+                        <div class="selectCon" hidden>
+                            <span id="old">新客户</span>
+                            <span id="new">老客户</span>
+                        </div>
+                        <span id="type" class="s_icon"></span>
+                        <ul class="errorlist">
+                            <li></li>
+                        </ul>
+
+
                         <input type="text" class="input" placeholder="姓名" >
-                        <span id="name"></span>
+                        <span id="name" class="s_icon"></span>
                         <ul class="errorlist">
                             <li></li>
                         </ul>
 
                         <input type="text" class="input" placeholder="公司" >
-                        <span id="company"></span>
+                        <span id="company" class="s_icon"></span>
                         <ul class="errorlist">
                             <li></li>
                         </ul>
 
                         <input type="text" class="input" placeholder="邮箱" >
-                        <span id="email"></span>
+                        <span id="email" class="s_icon"></span>
                         <ul class="errorlist">
                             <li></li>
                         </ul>
 
                         <input type="text" class="input" placeholder="手机" >
-                        <span id="tel"></span>
+                        <span id="tel" class="s_icon"></span>
                         <ul class="errorlist">
                             <li></li>
                         </ul>
 
                         <!--提示填写真实信息-->
-                        <span id="info">请填写真实信息，以便第一时间接收戴尔渠道客户交流会的最新消息及相关资料</span>
+                        <span id="info"></span>
 
                         <input type="submit" class="submit" value="">
 
@@ -119,6 +134,31 @@
             </tr>
         </table>
     </div>
+
+    <script>
+        $(function(){
+            //个别机型input不一样
+            var input_h = $("#id_category").height();
+            $(".s_icon").css({marginTop:-(input_h+2)+'px'});
+
+            $("#id_category").click(function(){
+                $(".selectCon").toggle(check());
+            });
+            $(".selectCon span").click(function(){
+                $("#id_category").val($(this).text());
+                $(".selectCon").toggle(check());
+            });
+
+            //判断selectCon状态
+            function check (){
+                if($(".selectCon").is(":hidden")){
+                    $("#select_icon").attr('class','down');
+                }else{
+                    $("#select_icon").attr('class','up');
+                }
+            }
+        });
+    </script>
 
 
     <script>

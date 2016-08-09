@@ -372,6 +372,7 @@ tr,td{
     text-align: center;
     margin-left: 65px;
     margin-top: 45px;
+    margin-bottom: 25px;
 }
 /*==================================*/
 /*===========page_user.html=========*/
@@ -904,7 +905,8 @@ tr,td{
 #page_meetinfo table tr{
     display: block;
     position: relative;
-    width: 880px;
+    /*width: 880px;*/
+    width:995px;
     height: 49px;
     background-color: white;
     border-bottom: 1px solid #888;
@@ -929,8 +931,9 @@ tr,td{
 #page_meetinfo table .name,
 #page_meetinfo table .come,
 #page_meetinfo table .num,
-#page_meetinfo table .tel{
-
+#page_meetinfo table .tel,
+#page_meetinfo table .type
+{
     /*border-right:1px solid #888;*/
 }
 #page_meetinfo table .num{
@@ -951,7 +954,9 @@ tr,td{
 #page_meetinfo table .email{
     width: 288px;
 }
-
+#page_meetinfo table .type{
+    width: 108px;
+}
 #page_meetinfo table .yes{
     background: url("../images/meetinfo/come.png") no-repeat;
     background-position: 33px -10px;
@@ -1118,10 +1123,11 @@ tr,td{
     margin-left: 36px;
 }
 #page_live_join form .input{
+    display: block;
     width:377px;
     height:47px;
     border: 0px;
-    margin-top: 16px!important;
+    margin-top: 10px!important;
     margin-left: 58px;
     margin-top: 1.7px;
     border-radius: 0px 10px 10px 0px;
@@ -1134,6 +1140,7 @@ tr,td{
     border: 1px solid #888888;
     border-left:0px!important ;
 }
+#page_live_join form #type,
 #page_live_join form #name,
 #page_live_join form #company,
 #page_live_join form #email,
@@ -1146,6 +1153,9 @@ tr,td{
     border-radius: 10px 0px 0px 10px;
     border: 1px solid #888888;
     border-right:0px!important ;
+}
+#page_live_join form #type{
+    background: url("../images/join/join_type.png");
 }
 #page_live_join form #name{
     background: url("../images/join/join_user.png");
@@ -1170,7 +1180,7 @@ tr,td{
     width: 151px;
     height: 61px;
     margin-left: 145.5px;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
 }
 #page_live_join form .resubmit{
     position: relative;
@@ -1189,13 +1199,65 @@ tr,td{
 #page_live_join #info{
     position: relative;
     display: block;
-    width: 437px;
-    height: 50px;
+    /*width: 437px;*/
+    /*height: 50px;*/
+    /*font-size: 17px;*/
+    /*line-height: 27px;*/
+    /*color:white;*/
     margin-top: 30px;
     margin-bottom: 50px;
-    font-size: 17px;
-    line-height: 27px;
-    color:white;
+    background: url("../images/join/info_03.png") no-repeat;
+    background-size: 100% 100%;
+    width: 433px;
+    height: 59px;
+}
+
+#page_live_join #select_icon{
+    background: url("../images/join/scon.png") no-repeat;
+    width: 21px;
+    height: 14px;
+    position: absolute;
+    margin-left: 390px;
+    margin-top: 21px;
+
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+#page_live_join #select_icon.up{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+#page_live_join #select_icon.down{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+
+#page_live_join .selectCon{
+    position: absolute;
+    width:430px;
+    height: 100px;
+    background: #f2f2f3;
+    margin-left: 5px;
+    margin-top: -2px;
+    border-radius: 0px 0px 10px 10px;
+}
+#page_live_join .selectCon span{
+    display: block;
+    width: 430px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 21px;
+    color: black;
+    text-indent: 63px;
+}
+#page_live_join .selectCon span:first-child{
+    border-bottom: 1px solid #c8c9ca;
 }
 /*==================================*/
 /*=============live_join_ok.html========*/
@@ -1369,13 +1431,14 @@ html,body{
     position: relative;
     width: 437px;
     height: auto;
-    top: 100px;
+    top: 120px;
     margin-left: 38px;
 }
 #page_regist .input{
+    display: block;
     width: 377px;
     height: 50px;
-    margin-top:10px;
+    margin-top:20px;
     margin-left: 60px;
     border-radius: 0px 5px 5px 0px;
     text-indent: 10px;
@@ -1450,13 +1513,14 @@ html,body{
     position: relative;
     width: 437px;
     height: auto;
-    top: 90px;
+    top: 100px;
     margin-left: 38px;
 }
 #page_login .input{
+    display: block;
     width: 377px;
     height: 50px;
-    margin-top:20px;
+    margin-top:30px;
     margin-left: 60px;
     border-radius: 0px 5px 5px 0px;
     text-indent: 10px;
@@ -1602,6 +1666,7 @@ html,body{
     height: 86px;
 }
 #page_forget .input{
+    display: block;
     width: 377px;
     height: 50px;
     margin-top:40px;
@@ -1726,6 +1791,7 @@ html,body{
     margin-left: 40px;
 }
 #page_reset .input{
+    display: block;
     width: 377px;
     height: 50px;
     margin-top:20px;
