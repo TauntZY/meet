@@ -113,6 +113,9 @@ $(document).ready(function(){
             $(".container").css({display:"none"});
         });
 
+        $(".close_area").click(function(){
+            $(".container").css({display:"none"});
+        });
     });
 
 });

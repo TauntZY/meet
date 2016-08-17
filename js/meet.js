@@ -1,4 +1,28 @@
 $(function(){
+
+    $(".more").click(function(){
+        var s = $(this).parent().parent().parent();
+        $(".moreInfo").animate({marginLeft:"500px"},100,function(){
+            $(".moreInfo").css({display:"none"});
+        });//先隐藏所有的info
+        setTimeout(function(){
+            s.siblings().css({display:"block"});
+            s.siblings().animate({"marginLeft":"0px"},250);
+        },200);
+
+    });
+    $(".return").click(function(){
+        $(this).parent().animate({marginLeft:"500px"},300,function(){
+            $(".moreInfo").css({display:"none"});
+        });
+
+    });
+
+    $(".closeBoot").click(function(){
+        $("#page_boot_user").css({display:"none"});
+        $("#page_boot_all").css({display:"none"});
+    })
+
     $("#cBtn").click(function(){
         if($(this).hasClass("show")){
             $("#classify").animate({marginLeft:"-250px"});
@@ -22,8 +46,8 @@ $(function(){
         };
     });
     $(".ewm").click(function(){
-        var m_qrcode = $(this).find("img:first-child").attr("meeting_qrcode");
-        var m_id = $(this).find("img:first-child").attr("meeting_id");
+        var m_qrcode = $(this).attr("meeting_qrcode");
+        var m_id = $(this).attr("meeting_id");
         $("#page_ewm").css({display:"block"});
         $("#page_ewm img").attr("src",m_qrcode);
         $("#page_ewm .id span").text(m_id);
@@ -34,12 +58,12 @@ $(function(){
     document.getElementById("page_meet").addEventListener("touchstart",function(e)
     {
         _xs =e.touches[0].pageX;
-        console.log("start",_xs)
+        //console.log("start",_xs);
     });
     document.getElementById("page_meet").addEventListener("touchend",function(e)
     {
         _xe=e.changedTouches[0].pageX;
-        console.log("end",_xe);
+        //console.log("end",_xe);
         //先判断是否纯在 cBtn
         if(document.getElementById("cBtn")){
             if( _xe - _xs > 80){
@@ -57,7 +81,5 @@ $(function(){
                 }
             }
         }
-
-
     })
 });

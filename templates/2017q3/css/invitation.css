@@ -9,7 +9,6 @@ span,input{
 html,body{
     width:100%;
     height: 100%;
-    /*background: url('../images/share/bg.png') no-repeat;*/
     background-size: cover;
     overflow: hidden;
 }
@@ -24,6 +23,16 @@ html,body{
     display: block;
     text-indent: 20px;
     list-style: none;
+}
+.preview{
+    z-index: 9;
+    position: absolute;
+    background: url("../images/preview.png");
+    background-size: 100% 100%;
+    width: 186px;
+    height: 39px;
+    top: 52px;
+    right: 30px;
 }
 #next{
     z-index: 9;
@@ -62,7 +71,7 @@ html,body{
 #page_inv_2,
 #page_inv_3{
     position: relative;
-    width: 640px;
+    width: 100%;
     height: 100%;
     overflow: hidden;
 }
@@ -118,8 +127,8 @@ html,body{
     margin-left: 157px;
     /*font*/
     color: #888888;
-    font-size: 23px;
-    line-height: 39px;
+    font-size: 2.3rem;
+    line-height: 3.9rem;
 }
 #page_inv_2 #m_area{
     height: auto!important;
@@ -139,7 +148,7 @@ html,body{
 #page_inv_2 .f_txt,
 #page_inv_2 form{
     position: absolute;
-    width: 145px;
+    width: 180px;
     height: 160px;
     /*background:red;*/
     color: black;
@@ -155,8 +164,8 @@ html,body{
     margin-bottom: 5px;
     /*font*/
     text-indent: 25px;
-    font-size: 23px;
-    line-height: 39px;
+    font-size: 2.3rem;
+    line-height: 3.9rem;
     /**/
     background: url("../images/libg.png") no-repeat;
     background-position: 6px 10px;
@@ -178,7 +187,7 @@ html,body{
     height:46px ;
     margin: 0 auto;
     top: 160px;
-    left: 0px;
+    margin-left: 47px;
     border-radius: 8px;
 }
 #page_inv_2 #mt_info{
@@ -187,10 +196,18 @@ html,body{
     background-size: 100% 100%;
     width: 560px;
     height: 490px;
-    top: 170px;
+    margin-top: 170px;
     left: 42px;
 }
-
+#page_inv_2 #hint{
+    position: absolute;
+    margin-left: 187px;
+    margin-top: 20px;
+    background: url("../images/hint.png");
+    background-size: 266px 28.5px;
+    width: 266px;
+    height: 28.5px;
+}
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -204,13 +221,13 @@ html,body{
     height: auto;
     position: absolute;
     left: 68.5px;
-    top:100px;
+    top:125px;
 }
 #page_inv_3 #sign #sign_t{
     background: url("../../../images/sign/sign_t.png") no-repeat;
     background-size: 100% 100%;
     width: 514px;
-    height: 82px;
+    height: 84.5px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -223,23 +240,21 @@ html,body{
 }
 #page_inv_3 .input{
     display: block;
-    width: 377px;
+    /*width: 377px;*/
+    width: 365px;
     height: 50px;
     margin-top:20px;
     margin-left: 60px;
     border-radius: 0px 5px 5px 0px;
-    text-indent: 10px;
-    white-space: nowrap;
-    overflow-x: scroll;
-    color:#898988;
-    font-size: 23px;
-    line-height: 50px;
+    color:#222222;
+    /*font-size: 23px;*/
+    /*line-height: 50px;*/
     background: white;
     -webkit-appearance:none;
     border: 1px solid #898988;
     border-left: 0px;
     /*font*/
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 47px;
     text-indent: 10px;
     white-space: nowrap;
@@ -281,6 +296,24 @@ html,body{
     background-size: 100% 100%;
 }
 
+#page_inv_3 .tf{
+    width: 45px;
+    height: 50px;
+    position: absolute;
+    right: -30px;
+    margin-top: -50px;
+}
+#page_inv_3 .tf.true{
+    background: url("../../../images/sign/sign_tf.png") no-repeat;
+    background-position: 3px -51px;
+    background-blend-mode: lighten;
+}
+#page_inv_3 .tf.false{
+    background: url("../../../images/sign/sign_tf.png") no-repeat;
+    background-position: 6px 4px;
+    background-blend-mode: lighten;
+}
+
 #page_inv_3 form .submit{
     position: relative;
     border: none;
@@ -291,7 +324,7 @@ html,body{
     width: 146px;
     height: 56px;
     margin-left: 145.5px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 #page_inv_3 form .resubmit{
     position: relative;
@@ -300,9 +333,9 @@ html,body{
     display: block;
     background: url("../../../images/sign/resubmit.png");
     background-size: 100% 100%;
-    width: 155px;
-    height: 63.5px;
-    margin-left: 145.5px;
+    width: 177.5px;
+    height: 60px;
+    margin-left: 129.5px;
     margin-bottom: 80px;
 }
 
@@ -310,11 +343,21 @@ html,body{
     position: relative;
     display: block;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     background: url("../../../images/join/info_03.png") no-repeat;
     background-size: 100% 100%;
-    width: 433px;
-    height: 59px;
+    width: 438px;
+    height: 85.5px;
+}
+#page_inv_3 #reinfo{
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    background: url("../../../images/join/info_032.png") no-repeat;
+    background-size: 100% 100%;
+    width: 444px;
+    height: 66px;
 }
 
 
@@ -355,19 +398,20 @@ html,body{
 
 #page_inv_3 .selectCon{
     position: absolute;
-    width:433px;
+    /*width:433px;*/
+    width:420px;
     height: 100px;
     background: #f2f2f3;
     margin-left: 5px;
-    margin-top: -2px;
+    margin-top: 47px;
     border-radius: 0px 0px 10px 10px;
 }
 #page_inv_3 .selectCon span{
     display: block;
-    width: 430px;
+    width: 420px;
     height: 50px;
     line-height: 50px;
-    font-size: 21px;
+    font-size: 2.1rem;
     color: black;
     text-indent: 63px;
 }

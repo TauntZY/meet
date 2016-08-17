@@ -9,14 +9,13 @@ $(function(){
         easing:'ease-in-out',
         easingcss3:'ease-in-out',
         afterLoad: function(anchorLink, index){
-
             if(index == 3){
-                $("#next").hide();
+                $("#next").css({"display":"none"});
             }
             else{
-                $("#next").show();
+                $("#next").css({"display":"block"});
             }
-        },
+        }
     });
 
     //----禁止 微信下拉查看网址
@@ -37,19 +36,19 @@ $(function(){
         $(this).css({display:"none"});
     });
 
-    //在输入信息的时候隐藏下一页的指示（防止挡住输入框）
-    $("#page_inv_3 .input").focusin(function(){
-        $("#next").hide();
-    });
-    $("#page_inv_3 .input").focusout(function(){
-        $("#next").show();
-    });
-
     $(".share").click(function(){
         $(".shareop").css({display:'block'});
     });
     $(".shareop").click(function(){
         $(this).css({display:'none'});
+    });
+
+    // 防止键盘挡住input
+    $(".up").focusin(function(){
+        $("#sign").css({"marginTop":"-40%"});
+    });
+    $(".up").focusout(function(){
+        $("#sign").css({"marginTop":"0px"});
     });
 
 });

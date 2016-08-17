@@ -12,7 +12,6 @@
     <script src="templates/2017q3/js/turn_page.js"></script>
     <script src="js/lib/fullpage.js"></script>
     <script src="js/lib/transite.js"></script>
-
 </head>
 <body>
     <!--分享指示图-->
@@ -22,6 +21,7 @@
         <!--邀请函封面开始-->
         <div id="page_inv_1" class="section">
             <div class="scalaCon">
+                <div class="preview"></div>
                 <img src="templates/2017q3/images/invita_1.png" alt="" width="640px">
             </div>
         </div><!--邀请函封面结束-->
@@ -29,7 +29,9 @@
         <!--会议信息页开始-->
         <div id="page_inv_2" class="section">
             <div class="scalaCon">
-                <div class="logo"></div>
+                <!--  只有预览的时候有，每个页面都有一个  -->
+                <div class="preview"></div>
+                <!--<div class="logo"></div>-->
                 <div id="form">
                     <div class="f_txt">
                         <li>会议时间：</li>
@@ -46,79 +48,84 @@
                     </div>
 
                 </div>
-
                 <div id="mt_info_t"></div>
                 <div id="mt_info"></div>
+                <div id="hint"></div>
             </div>
-
         </div><!--会议信息页结束-->
-
         <!--报名页面开始-->
         <div id="page_inv_3" class="section">
             <div class="scalaCon">
+                <div class="preview"></div>
                 <!--报名-->
                 <div id="sign" style="display: block;">
                     <div id="sign_t"></div>
-                    <form action="">
+                    <form action="invitation.html">
 
                         <!--流览时设置为只读  -->
 
                         <!-- 选择箭头 -->
                         <div id="select_icon" class=""></div>
 
-                        <input type="text" class="input " id="id_category" placeholder="类别（与戴尔合作过即是老客户）" readonly >
-                        <!--悬着内容框-->
+                        <!--选择内容框-->
                         <div class="selectCon" hidden>
-                            <span id="old">新客户</span>
-                            <span id="new">老客户</span>
+                            <span id="old">老客户：与戴尔合作时间&ge;3个月</span>
+                            <span id="new">新客户：未合作或合作时间&lt;3个月</span>
                         </div>
+                        <input type="text" class="input" id="id_category" placeholder="类别" readonly >
                         <span id="type" class="s_icon"></span>
+                        <!--信息正确加 class="tf true"-->
+                        <div class="tf true"></div>
                         <ul class="errorlist">
                             <li></li>
                         </ul>
 
-
                         <input type="text" class="input" placeholder="姓名" >
                         <span id="name" class="s_icon"></span>
+                        <div class="tf true"></div>
                         <ul class="errorlist">
                             <li></li>
                         </ul>
 
                         <input type="text" class="input" placeholder="公司" >
                         <span id="company" class="s_icon"></span>
+                        <div class="tf false"></div>
                         <ul class="errorlist">
                             <li></li>
                         </ul>
 
-                        <input type="text" class="input" placeholder="邮箱" >
+                        <input type="text" class="input up" placeholder="邮箱" >
                         <span id="email" class="s_icon"></span>
+                        <div class="tf false"></div>
                         <ul class="errorlist">
                             <li></li>
                         </ul>
 
-                        <input type="text" class="input" placeholder="手机" >
+                        <input type="text" class="input up" placeholder="手机" >
                         <span id="tel" class="s_icon"></span>
+                        <div class="tf false"></div>
                         <ul class="errorlist">
                             <li></li>
                         </ul>
 
                         <!--提示填写真实信息-->
                         <span id="info"></span>
+                        <!--再次修改的提示信息-->
+                        <span id="reinfo"></span>
 
                         <input type="submit" class="submit" value="">
 
                         <!--重新填写显示修改按钮-->
                         <!--<input type="submit" class="resubmit" value="">-->
-
                     </form>
                 </div>
             </div>
 
         </div><!--报名页面结束-->
+
     </div>
 
     <div id="next"></div>
-
 
     <!--最后看到的客户没有菜单栏-->
     <div class="nav" >
@@ -126,10 +133,9 @@
             <tr width="100%">
                 <td class="home"><a href="home.html"></a></td>
                 <td class="all"><a href="meet.html"></a></td>
-                <td class="data"><a href="meet_info.html"></a></td>
                 <td class="edit"><a href="edit.html"></a></td>
-                <!--<td class="return"><a href="home.html"></a></td>-->
-                <!--<td class="create"><a href="edit.html"></a></td>-->
+                <td class="return"><a href="home.html"></a></td>
+                <td class="create"><a href="edit.html"></a></td>
                 <td class="share"><a href="#"></a></td>
             </tr>
         </table>
@@ -137,6 +143,16 @@
 
     <script>
         $(function(){
+
+            //直接滚到第三页
+//            $.fn.fullpage.setScrollingSpeed(0);
+//            $.fn.fullpage.moveTo('page3', 1);
+//            setTimeout(function(){
+//                $.fn.fullpage.setScrollingSpeed(700);
+//            },500);
+
+
+
             //个别机型input不一样
             var input_h = $("#id_category").height();
             $(".s_icon").css({marginTop:-(input_h+2)+'px'});
@@ -145,7 +161,7 @@
                 $(".selectCon").toggle(check());
             });
             $(".selectCon span").click(function(){
-                $("#id_category").val($(this).text());
+                $("#id_category").val($(this).text().substring(0,3));
                 $(".selectCon").toggle(check());
             });
 
@@ -160,10 +176,7 @@
         });
     </script>
 
-
     <script>
-        //直接滚到第三页
-//        $.fn.fullpage.moveTo('page3', 1);
 
         var h = $(window).height();
         var w = $(window).width();

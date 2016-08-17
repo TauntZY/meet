@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=640,user-scalable=no">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- 加载动画使用的css和js -->
+    <link rel="stylesheet" href="css/pace-circle.css"/>
+    <script src="js/lib/pace.js"></script>
+</head>
+<body>
+    <div id="page_index">
+        <div id="user">
+            <span>欧阳正华</span>
+            <a href="exit.html"></a>
+        </div>
+        <div id="inner">
+            <a href="home.html"></a>
+            <a href="meet.html"></a>
+        </div>
+        <div id="bottom"></div>
+    </div>
+    <script>
+        Pace.on('hide',function(){
+            setTimeout(function(){
+                document.getElementById("page_index").style.display = "block";
+            },0);
+        });
+    </script>
+</body>
+</html>
