@@ -26,13 +26,32 @@ html,body{
 }
 .preview{
     z-index: 9;
-    position: absolute;
-    background: url("../images/preview.png");
+    position: fixed;
     background-size: 100% 100%;
     width: 186px;
     height: 39px;
     top: 52px;
     right: 30px;
+    /*font*/
+    color:white;
+    font-size: 23px;
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 4px #fff, 0 0 20px #ff00de, 0 0 40px #3C79B5;
+}
+.tip_share{
+    z-index: 9;
+    position: fixed;
+    background-size: 100% 100%;
+    width: 186px;
+    height: 39px;
+    top: 40px;
+    right: 30px;
+    /*font*/
+    color:white;
+    font-size: 23px;
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 4px #fff, 0 0 20px #ff00de, 0 0 40px #3C79B5;
+}
+.tip_share p{
+    text-align: center;
 }
 #next{
     z-index: 9;
@@ -113,7 +132,7 @@ html,body{
     background-size: 100% 100%;
     width: 563px;
     height: auto;
-    top: 150px;
+    top: 110px;
     left: 38px;
 }
 #page_inv_2 .input{
@@ -186,7 +205,7 @@ html,body{
     width: 548.5px;
     height:46px ;
     margin: 0 auto;
-    top: 160px;
+    top: 120px;
     margin-left: 47px;
     border-radius: 8px;
 }
@@ -196,7 +215,7 @@ html,body{
     background-size: 100% 100%;
     width: 560px;
     height: 490px;
-    margin-top: 170px;
+    margin-top: 130px;
     left: 42px;
 }
 #page_inv_2 #hint{
