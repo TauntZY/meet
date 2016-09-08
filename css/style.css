@@ -726,6 +726,15 @@ tr,td{
     float: left;
     border-right:1px solid #6BBEE5 ;
 }
+
+#page_meet #meet_con  .info .noewm a{
+    width: 161px;
+}
+#page_meet #meet_con  .info .noewm .ewm{
+    display: none;
+}
+
+
 #page_meet .moreInfo .invi{
     width:125px;
     background: url("../images/meet/icon_invi.png") no-repeat center center;
@@ -1325,7 +1334,7 @@ tr,td{
     height: 56px;
     position: relative;
     margin: 0 auto;
-    top: 100px;
+    top: 60px;
 }
 #page_live_join #sign{
     background-color:rgba(107,200,242,0.7);
@@ -1335,7 +1344,7 @@ tr,td{
     height: auto;
     position: absolute;
     left: 68.5px;
-    margin-top:160px;
+    margin-top:110px;
 }
 #page_live_join #sign #sign_t{
     background: url("../images/sign/sign_t.png") no-repeat;
@@ -1453,11 +1462,11 @@ tr,td{
     /*line-height: 27px;*/
     /*color:white;*/
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     background: url("../images/join/info_03.png") no-repeat;
     background-size: 100% 100%;
-    width: 438px;
-    height: 85.5px;
+    width: 449px;
+    height: 146.5px;
 }
 #page_live_join #reinfo{
     position: relative;
